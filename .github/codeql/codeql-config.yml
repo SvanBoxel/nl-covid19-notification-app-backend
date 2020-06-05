@@ -1,0 +1,8 @@
+name: "All the goodness from lgtm.com"
+
+disable-default-queries: false
+
+queries:
+  ### NEW - the below suites are now available
+  - uses: security-and-quality # same as the lgtm-full suite
+  # - uses: security-extended  # same as the lgtm-full suite, but limited to security queries from that suite
