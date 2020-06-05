@@ -1,0 +1,20 @@
+name: "All the goodness from lgtm.com"
+
+disable-default-queries: false
+
+queries:
+  ### NEW - the below suites are now available
+  - uses: security-and-quality # same as the lgtm-full suite
+  # - uses: security-extended  # same as the lgtm-full suite, but limited to security queries from that suite
+  
+  ### OLD - do not use the below anymore
+  #- name: Queries from lgtm.com (Java)
+  #  uses: ./java-lgtm.qls
+  #- name: Queries from lgtm.com (JavaScript)
+  #  uses: ./javascript-lgtm.qls
+  #- name: Queries from lgtm.com (Python)
+  #  uses: ./python-lgtm.qls
+
+paths-ignore:
+  - src
+  - lib
