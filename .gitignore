@@ -1,6 +1,5 @@
 # VS/CShrap/.NET Core ignores from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 # Docker ignores from https://github.com/atlassian/docker/blob/master/.gitignore
-# TODO K8S?
 
 # User-specific files
 McsTestConfigProvider.Db.DoNotCommit.cs
@@ -153,9 +152,13 @@ coverage*[.json, .xml, .info]
 *.coveragexml
 
 # NCrunch
+globalconfig.crunch.v3.xml
 _NCrunch_*
-.*crunch*.local.xml
+_NCrunch_\**
+SOLUTION.v3.ncrunchsolution.user
 nCrunchTemp_*
+*.ncrunchproject
+*.ncrunchsolution
 
 # MightyMoose
 *.mm.*
@@ -360,3 +363,25 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
+# MacOS
+.DS_Store
+
+# Some tooling
+*dotnet-tools.json
+
+# ICC config
+/ICCPortal/appsettings.Development.personal.json
+/ICCPortal/appsettings.Development.ggdghor.acc.json
+/ICCPortal/appsettings.Development.ggdghor.json
+
+# Generated XML files
+**/NL.Rijksoverheid.ExposureNotification.BackEnd.*.xml
+
+# Publishing stuff
+/publish/
+/packages/
+publish_Logger.txt
+/BatchJobsApi/NL.Rijksoverheid.ExposureNotification.BackEnd.BatchJobsApi.xml
+/ContentApi/NL.Rijksoverheid.ExposureNotification.BackEnd.ContentApi.xml
+/IccBackend/NL.Rijksoverheid.ExposureNotification.BackEnd.Applications.IccBackend.xml
+/MobileAppApi/NL.Rijksoverheid.ExposureNotification.BackEnd.MobileAppApi.xml
